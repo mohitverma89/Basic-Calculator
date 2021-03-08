@@ -44,7 +44,8 @@ h2{
 }
 #buttonprint{
     width:310px;
-    overflow: auto;
+    
+    overflow:hidden;
     text-align:right;
 }
 .button:hover{

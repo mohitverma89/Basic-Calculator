@@ -14,11 +14,16 @@
              display.innerText = null;
          }
          else if(value== "equalto" ){
+             if(display.innerText[0]=='0'){
+                display.innerText=display.innerText.substring(1,display.innerText.length);
+             }
             display.innerText=eval(display.innerText);
         }
         else if (value=="backspace"){
             display.innerText=display.innerText.substring(0,display.innerText.length-1);
                 }
+
+
          else{
              display.innerText += value;
          }
